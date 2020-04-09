@@ -1,0 +1,25 @@
+.App {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  border: 1px solid black;
+}
+
+.header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.main {
+  display: flex;
+}
+
+.song-list {
+  width: 70%;
+}
+
+.main-right {
+  width: 100%;
+}
