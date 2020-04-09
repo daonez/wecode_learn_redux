@@ -1,8 +1,10 @@
 import React from "react";
+import { addSong } from "./store/actions";
+import { connect } from "react-redux";
 
-const AddButton = () => {
+const AddButton = ({ addSong }) => {
   const onClick = () => {
-    console.log("clicked!");
+    addSong({ title: "new song", duration: "1:00" });
   };
 
   return (
@@ -14,4 +16,4 @@ const AddButton = () => {
   );
 };
 
-export default AddButton;
+export default connect(null, { addSong })(AddButton);
